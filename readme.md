@@ -1,6 +1,6 @@
 # Theme wordpress : The first
 
-Author : T. Brétéché, M. Cambon, T. Delmas, G. Daudin
+Author : T. Brétéché, M. Cabon, T. Delmas, G. Daudin
  
 ## Ressources
 
