@@ -1,47 +1,59 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="fr">
 
 <head>
+    <!-- bootstrap 3-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-	<title>
+    <!--fontawesome-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-		<?php bloginfo('name') ?>
-		<?php if ( is_404() ) : ?> &raquo; 
+    <!-- titre-->
+	<title>the First : blog de jeux vidéos</title>
 
-			<?php _e('Not Found') ?><?php elseif ( is_home() ) : ?> &raquo; 
-			<?php bloginfo('description') ?><?php else : ?>
-			<?php wp_title() ?>
-			
-		<?php endif ?>
-		
-	</title> 
+    <!-- css -->
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 
-	  
 
-	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" /> 
+    <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
-    <!-- removed for security -->
-	<!--<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />-->
 
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" /> 
-
-	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" /> 
-
-	<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" /> 
-
-	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" /> 
-
-	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-
-	<?php wp_head(); ?>   
-
-	<?php wp_get_archives('type=monthly&format=link'); ?> 
 
 </head> 
 
 <body>
-<div id="tf-header"></div>
-<div id="tf-nav-menu">
-    <?php wp_nav_menu(); ?>
-</div>
+
+<!-- Navigation -->
+<nav class="navbar navbar-fixed-top">
+    <div class="container">
+
+        <!--navbar brand-->
+        <a class="navbar-brand" href="#page-top">The First</a>
+
+        <!--bouton toggle -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-responsive">
+                <span class="sr-only">Menu</span> Menu <i class="fa fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Menu responsive -->
+        <div class="collapse navbar-collapse" id="menu-responsive">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="page-scroll">
+                    <a href="#presentation">Présentation</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#parcours">Parcours</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="tf-content">
+
+
