@@ -39,10 +39,10 @@
         <!-- Menu responsive -->
         <?php
         $opts = array(
-            menu_class => 'nav navbar-nav navbar-right',
-            container => 'div',
-            container_class => 'collapse navbar-collapse',
-            container_id => 'menu-responsive'
+            'menu_class' => 'nav navbar-nav navbar-right',
+            'container' => 'div',
+            'container_class' => 'collapse navbar-collapse',
+            'container_id' => 'menu-responsive'
         );
         wp_nav_menu($opts);
         ?>
