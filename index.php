@@ -4,7 +4,7 @@
 get_header(); ?>
 
 
-<div id="content" class="row">
+<div class="row">
   <div class="col-md-8">
 
 	<!--vérifier s’il y a des articles à afficher: « if have posts ». S’il n’y en a pas, il n’affiche rien. -->
@@ -25,7 +25,7 @@ get_header(); ?>
 		</p>
 			
 			<!--afficher le contenu de l'article-->
-			<div class="post_content">
+			<div class="text-justify">
 			<?php the_content(); ?>
 			</div> 
 		</div>
