@@ -37,8 +37,7 @@
 
 	<body>
 
-		<?php get_header(); ?> <!-- ouvrir header,php -->
-
+	    <?php wp_nav_menu(); ?>
 
 
 
