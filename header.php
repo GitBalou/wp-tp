@@ -8,7 +8,6 @@
     <!--fontawesome-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-
     <!-- titre-->
 	<title>the First : blog de jeux vidéos</title>
 
@@ -17,11 +16,10 @@
 
 
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 
 
-</head>
+</head> 
 
 <body>
 
