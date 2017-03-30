@@ -5,7 +5,7 @@ get_header(); ?>
 
 
 <div id="content" class="row">
-  <div class="col-md-6">
+  <div class="col-md-8">
 
 	<!--vérifier s’il y a des articles à afficher: « if have posts ». S’il n’y en a pas, il n’affiche rien. -->
 	<?php if(have_posts()) : ?>
@@ -23,22 +23,16 @@ get_header(); ?>
 		Le <?php the_time('j F Y') ?> 
 		par <?php the_author() ?> <?php comments_popup_link('Pas de commentaires', '1 Commentaire', '% Commentaires') . edit_post_link('Editer', ' &#124; ', ''); ?>   
 		</p>
-
+			
+			<!--afficher le contenu de l'article-->
 			<div class="post_content">
 			<?php the_content(); ?>
 			</div> 
 		</div>
 
-<div class="post_content">
-<?php the_excerpt(); ?>
-</div> 
-</div>
 	<!--fermer cette requête-->
 	<?php endwhile; ?> 
 	<?php endif; ?>
 
 	<?php get_footer(); ?>
 </div>
-	</body>
-
-</html>
