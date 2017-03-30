@@ -31,7 +31,24 @@
 
 	<body>
 
-		<?php get_header(); ?> <!-- ouvrir header,php --> 
-	</body> 
+		<?php get_header(); ?> <!-- ouvrir header,php -->
 
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
