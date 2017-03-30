@@ -27,6 +27,12 @@ get_header(); ?>
 
 			<?php the_content(); ?>
 
+			<div> 
+
+				<?php comments_template(); ?>
+
+			</div>
+
 		<?php endwhile; ?> 
 		<?php endif; ?>
 
@@ -36,10 +42,10 @@ get_header(); ?>
 
 		<p class="postmetadata">
 
-			<?php the_time('j F Y')?> par <?php the_author()?> <?php comments_popup_link('Pas de commentaires', '1 Commentaire', '% Commentaires') . edit_post_link('Editer', ' &#124; ', ''); ?>   
+			Le <?php the_time('j F Y')?> par <?php the_author()?> <?php comments_popup_link('Pas de commentaires', '1 Commentaire', '% Commentaires') . edit_post_link('Editer', ' &#124; ', ''); ?>   
 		</p>
 
-	</div>
+		
 
 
 	<?php get_footer(); ?>
