@@ -21,8 +21,7 @@
 
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" /> 
 
-    <!-- removed for security -->
-	<!--<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />-->
+ 
 
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" /> 
 
@@ -34,9 +33,6 @@
 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-	<?php wp_head(); ?>   
-
-	<?php wp_get_archives('type=monthly&format=link'); ?> 
 
 </head> 
 
