@@ -15,11 +15,11 @@
 <h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 
 <p class="postmetadata">
-<?php the_time('j F Y') . ' par ' . the_author() . comments_popup_link('Pas de commentaires', '1 Commentaire', '% Commentaires') . edit_post_link('Editer', ' &#124; ', ''); ?>   
+<?php the_time('j F Y') ?> par <?php the_author() ?> <?php comments_popup_link('Pas de commentaires', '1 Commentaire', '% Commentaires'); ?> <?php edit_post_link('Editer', ' &#124; ', ''); ?>   
 </p>
 
 <div class="post_content">
-<?php the_content(); ?>
+<?php the_excerpt(); ?>
 </div> 
 </div>
 
