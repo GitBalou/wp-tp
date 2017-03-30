@@ -20,5 +20,5 @@ function create_auteur_post() {
 // Ajout d'un menu en header
 add_action( 'init', 'register_navigation_menu' );
 function register_navigation_menu() {
-    register_nav_menu('header-menu',__( 'Header Menu' ));
+    register_nav_menu('header-menu',__( 'header-menu' ));
 }

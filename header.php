@@ -14,8 +14,7 @@
     <!-- css -->
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 
-
-    <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+    <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" >
 
 
 
@@ -38,22 +37,17 @@
         </div>
 
         <!-- Menu responsive -->
-        <div class="collapse navbar-collapse" id="menu-responsive">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="page-scroll">
-                    <a href="#presentation">Présentation</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#parcours">Parcours</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
+        <?php
+        $opts = array(
+            menu_class => 'nav navbar-nav navbar-right',
+            container => 'div',
+            container_class => 'collapse navbar-collapse',
+            container_id => 'menu-responsive'
+        );
+        wp_nav_menu($opts);
+        ?>
     </div>
 </nav>
 
-<section id="tf-content">
-
+<section class="container">
 

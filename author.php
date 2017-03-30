@@ -16,12 +16,16 @@ $authors = new WP_Query($args);
 while ($authors->have_posts()) : $authors->the_post();
 ?>
     <div class="row">
-    <div class="col-md-6 text-center">
-        <div class="tf-autor">
+        <div class="col-md-8 col-md-offset-2">
+            <?php the_post_thumbnail(
+                'post-thumbnail', [
+                    'class' => 'img-thumbnail'
+                ]);?>
+
             <h2><?php the_title(); ?></h2>
 
             <p><?php the_content();?></p>
-            <p><?php the_post_thumbnail();?></p>
+
         </div>
     </div>
 <?php
