@@ -14,7 +14,7 @@
     <!-- css -->
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 
-    <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 </head> 
 
@@ -52,4 +52,5 @@
 </nav>
 
 <section id="tf-content">
+
 
