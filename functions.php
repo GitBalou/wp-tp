@@ -1,9 +1,9 @@
 <?php
 
 // Ajout du custom_post auteur
-add_action( 'init', 'create_post_type' );
+add_action( 'init', 'create_auteur_post' );
 
-function create_post_type() {
+function create_auteur_post() {
     register_post_type('auteur', array(
         'label'     => 'auteur',
         'labels'    => array(
@@ -15,4 +15,10 @@ function create_post_type() {
         ),
         'public'            => true
     ));
+}
+
+// Ajout d'un menu en header
+add_action( 'init', 'register_navigation_menu' );
+function register_navigation_menu() {
+    register_nav_menu('header-menu',__( 'Header Menu' ));
 }
