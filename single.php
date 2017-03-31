@@ -6,7 +6,11 @@
 get_header(); ?>
 
 <div class="row">
-	<div class="col-md-8 col-md-offset-2">
+    <div class="col-md-2 sidebar">
+        <?php get_template_part('template-parts/sidebar'); ?>
+    </div>
+
+	<div class="col-md-8">
 
 		<div class="post" id="post-<?php the_ID(); ?>">
 

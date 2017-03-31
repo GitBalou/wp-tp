@@ -87,3 +87,11 @@ body {
   padding: 10px 0;
 
 }
+
+.sidebar {
+    margin-top: 80px;
+}
+
+.sidebar ul {
+    margin-top: 10px;
+}
