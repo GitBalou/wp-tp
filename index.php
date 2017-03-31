@@ -3,11 +3,30 @@
 
 get_header(); ?>
 
+<!-- header -->
+<div class="row" id="tf-bg-img">
 
-<!--<div class="row">
-<div class="col-md-8">-->
+    <div class="col-md-12">
 
-<!--vérifier s’il y a des articles à afficher: « if have posts ». S’il n’y en a pas, il n’affiche rien. -->
+        <!-- image de "fond" -->
+        <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="background image" />
+
+        <!-- dégragé avec fond noir -->
+        <div id="tf-header-darkener"></div>
+
+        <!-- titre du blog -->
+        <div id="tf-header-title">
+            <h1><?php echo get_bloginfo(); ?></h1>
+            <p><?php echo get_bloginfo('description'); ?></p>
+        </div>
+
+    </div>
+</div>
+
+<!-- liste des articles -->
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <!--vérifier s’il y a des articles à afficher: « if have posts ». S’il n’y en a pas, il n’affiche rien. -->
 <?php if(have_posts()) : ?>
 
   <!--va aller chercher PARMI les articles (commande « while ») celui qu’il faut (« the post »)-->
