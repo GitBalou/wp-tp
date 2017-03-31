@@ -22,7 +22,7 @@ section {
     padding:0;
 }
 
-.col-* {
+.col-md-12 {
     margin: 0;
     padding: 0;
 }
@@ -58,6 +58,8 @@ section {
     min-width: 100% !important;
     height: 650px;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 /* darkener for title + menu */
@@ -85,6 +87,7 @@ section {
     color: #fff;
     text-align: right;
 }
+
 
 #tf-header-title h1 {
     font-size: 72px;
