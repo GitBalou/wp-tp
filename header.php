@@ -27,7 +27,7 @@
     <div class="container">
 
         <!--navbar brand-->
-        <a class="navbar-brand" href="#page-top">The First</a>
+        <a class="navbar-brand" href="#page-top"><?php echo get_bloginfo(); ?></a>
 
         <!--bouton toggle -->
         <div class="navbar-header page-scroll">

@@ -1,60 +1,68 @@
 /* Theme Name: The first.
 Version: 0.1 Author: Maxime, Gabriel, Typhanie, Théo */
 
+
 /* NAVBAR */
+
 .navbar {
     background-color: #4DAF7C;
-
 }
-.menu-item a{
+
+.menu-item a {
     color: #fff;
 }
 
-.navbar-brand { color : #fff; }
+.navbar-brand {
+    color: #fff;
+}
+
 
 /* BODY */
+
 body {
     background-color: #fff;
 }
 
+
 /* container bs */
+
 .container {
     width: 100%;
     padding: 0;
     margin: 0;
 }
+
+
 /* bacgrkoung image */
+
 #tf-bg-img {
     /* Preserve aspet ratio */
     min-width: 100%;
     height: 650px;
-
     overflow: hidden;
 }
 
+
 /* darkener for title + menu */
+
 #tf-header-darkener {
     position: absolute;
     top: 350px;
     left: 0;
-
     width: 100%;
     height: 300px;
     z-index: 40;
-
-    background-image: -moz-linear-gradient(
-            rgba(255, 255, 255, 0) 0%, rgba(0,0,0, 0.7) 95%
-    );
+    background-image: -moz-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.7) 95%);
 }
 
+
 /* blog title */
+
 #tf-header-title {
     position: absolute;
     top: 400px;
     right: 100px;
-
     z-index: 50;
-
     color: #fff;
     text-align: right;
 }
@@ -63,8 +71,6 @@ body {
     font-size: 72px;
 }
 
-
 #tf-header-title p {
     font-size: 50px;
 }
-
