@@ -25,7 +25,7 @@ function register_navigation_menu() {
 
 // Ajout d'un support pour une image d'en tête
 $args = array(
-    'default-image' => get_template_directory_uri() . '/images/header.jpg',
+    'default-image' => get_template_directory_uri() . '/assets/image/header.jpg',
     'uploads'       => true,
 );
 add_theme_support( 'custom-header', $args );
