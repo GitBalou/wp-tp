@@ -9,7 +9,7 @@ get_header(); ?>
     <div class="col-md-12">
 
         <!-- image de "fond" -->
-        <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="background image" />
+        <img src="<?php header_image(); ?>" alt="background image" />
 
         <!-- dégragé avec fond noir -->
         <div id="tf-header-darkener"></div>
