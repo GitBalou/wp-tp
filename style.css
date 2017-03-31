@@ -1,12 +1,39 @@
 /* Theme Name: The first.
 Version: 0.1 Author: Maxime, Gabriel, Typhanie, Théo */
 
+/* BODY */
+
+body {
+    position: relative;
+    background-color: #fff;
+    padding-top: 1px;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 0;
+    padding:0;
+}
+
+.row {
+    margin:0;
+    padding:0;
+}
+
+.col-* {
+    margin: 0;
+    padding: 0;
+}
 
 /* NAVBAR */
 
 .navbar {
     background-color: #4DAF7C;
     padding: 0px 10px;
+    width:100%;
+    margin: 0;
 }
 
 .menu-item a {
@@ -16,15 +43,6 @@ Version: 0.1 Author: Maxime, Gabriel, Typhanie, Théo */
 .navbar-brand {
     color: #fff;
 }
-
-
-/* BODY */
-
-body {
-    background-color: #fff;
-    padding-top: 1px;
-}
-
 
 /* container bs */
 
@@ -36,14 +54,11 @@ body {
 
 
 /* bacgrkoung image */
-
 #tf-bg-img {
-    /* Preserve aspet ratio */
-    min-width: 100%;
+    min-width: 100% !important;
     height: 650px;
     overflow: hidden;
 }
-
 
 /* darkener for title + menu */
 
@@ -55,6 +70,8 @@ body {
     height: 300px;
     z-index: 40;
     background-image: -moz-linear-gradient( rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.7) 95%);
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -85,7 +102,7 @@ body {
   background-color: #eee;
   height: 40px;
   padding: 10px 0;
-
+    width: 100%;
 }
 
 .sidebar {
