@@ -1,18 +1,24 @@
 /* Theme Name: The first.
 Version: 0.1 Author: Maxime, Gabriel, Typhanie, Théo */
 
+
 /* NAVBAR */
+
 .navbar {
     background-color: #4DAF7C;
-
 }
-.menu-item a{
+
+.menu-item a {
     color: #fff;
 }
 
-.navbar-brand { color : #fff; }
+.navbar-brand {
+    color: #fff;
+}
+
 
 /* BODY */
+
 body {
     background-color: #fff;
     padding-top: 80px;
@@ -23,4 +29,3 @@ body {
     box-shadow: 0px 1px 1px grey;
     margin-bottom: 30px;
 }
-
