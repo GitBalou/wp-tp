@@ -12,15 +12,16 @@ $args = array(
 );
 $authors = new WP_Query($args);
 ?>
+<div class="post text-center">
 <!-- Les auteurs -->
-<h1>Présentation des auteurs</h1>
-
+    <h1>Présentation des auteurs</h1>
+</div>
 <?php
 // Boucle wordpress
 while ($authors->have_posts()) : $authors->the_post();
 ?>
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-8 col-md-offset-2 post">
             <?php the_post_thumbnail(
                 'post-thumbnail', [
                     'class' => 'img-thumbnail'

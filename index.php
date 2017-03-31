@@ -56,5 +56,6 @@ get_header(); ?>
       <!--fermer cette requête-->
     <?php endwhile; ?>
   <?php endif; ?>
-
+  </div>
+</div>
   <?php get_footer(); ?>
