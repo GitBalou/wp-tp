@@ -6,6 +6,7 @@ Version: 0.1 Author: Maxime, Gabriel, Typhanie, Théo */
 
 .navbar {
     background-color: #4DAF7C;
+    padding: 0px 10px;
 }
 
 .menu-item a {
@@ -21,6 +22,7 @@ Version: 0.1 Author: Maxime, Gabriel, Typhanie, Théo */
 
 body {
     background-color: #fff;
+    padding-top: 1px;
 }
 
 
@@ -73,4 +75,23 @@ body {
 
 #tf-header-title p {
     font-size: 50px;
+}
+
+.post {
+  margin-top: 80px !important;
+}
+
+.footer {
+  background-color: #eee;
+  height: 40px;
+  padding: 10px 0;
+
+}
+
+.sidebar {
+    margin-top: 80px;
+}
+
+.sidebar ul {
+    margin-top: 10px;
 }
