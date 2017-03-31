@@ -21,11 +21,9 @@ while ($authors->have_posts()) : $authors->the_post();
                 'post-thumbnail', [
                     'class' => 'img-thumbnail'
                 ]);?>
-
             <h2><?php the_title(); ?></h2>
 
             <p><?php the_content();?></p>
-
         </div>
     </div>
 <?php
