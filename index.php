@@ -3,8 +3,9 @@
 
 get_header(); ?>
 
-<!-- header -->
-<div class="row" id="tf-bg-img">
+<!-- header sur la home-->
+<?php if( is_home() ) : ?>
+    <div class="row" id="tf-bg-img">
 
     <div class="col-md-12">
 
@@ -22,6 +23,7 @@ get_header(); ?>
 
     </div>
 </div>
+<?php endif; ?>
 
 <!-- liste des articles -->
 <div class="row">

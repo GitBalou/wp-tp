@@ -11,6 +11,7 @@ $args = array(
     'post_type' => 'auteur'
 );
 $authors = new WP_Query($args);
+
 ?>
 <div class="post text-center">
 <!-- Les auteurs -->
