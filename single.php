@@ -1,7 +1,7 @@
 
 
 
-<?php 
+<?php
 /*Template Name: Single*/
 get_header(); ?>
 
@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div class="post" id="post-<?php the_ID(); ?>">
 
-	<!--appeler le titre de l’article ou des articles // avec commande qui va permettre au titre de s’afficher quand vous survolez son lien-->
+		<!--appeler le titre de l’article ou des articles // avec commande qui va permettre au titre de s’afficher quand vous survolez son lien-->
 
 
 		<div id="content-article">
@@ -20,27 +20,27 @@ get_header(); ?>
 
 		<div class="post_content">
 
-		<?php if(have_posts()) : ?>
+			<?php if(have_posts()) : ?>
 
-		<!--va aller chercher PARMI les articles (commande « while ») celui qu’il faut (« the post »)-->
-		<?php while(have_posts()) : the_post(); ?> 
+				<!--va aller chercher PARMI les articles (commande « while ») celui qu’il faut (« the post »)-->
+				<?php while(have_posts()) : the_post(); ?>
 
-			<?php the_content(); ?>
+					<?php the_content(); ?>
 
-		<?php endwhile; ?> 
-		<?php endif; ?>
+				<?php endwhile; ?>
+			<?php endif; ?>
 
-		</div> 
+		</div>
 
-		
+
 
 		<p class="postmetadata">
 
-			<?php the_time('j F Y')?> par <?php the_author()?> <?php comments_popup_link('Pas de commentaires', '1 Commentaire', '% Commentaires') . edit_post_link('Editer', ' &#124; ', ''); ?>   
+			<?php the_time('j F Y')?> par <?php the_author()?> <?php comments_popup_link('Pas de commentaires', '1 Commentaire', '% Commentaires') . edit_post_link('Editer', ' &#124; ', ''); ?>
 		</p>
 
 	</div>
-
+	<?php get_template_part('template-parts/sidebar'); // Navigation bar (sidebar.php) ?>
 
 	<?php get_footer(); ?>
 
