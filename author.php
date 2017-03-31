@@ -11,7 +11,11 @@ $args = array(
     'post_type' => 'auteur'
 );
 $authors = new WP_Query($args);
+?>
+<!-- Les auteurs -->
+<h1>Présentation des auteurs</h1>
 
+<?php
 // Boucle wordpress
 while ($authors->have_posts()) : $authors->the_post();
 ?>
@@ -21,11 +25,9 @@ while ($authors->have_posts()) : $authors->the_post();
                 'post-thumbnail', [
                     'class' => 'img-thumbnail'
                 ]);?>
-
             <h2><?php the_title(); ?></h2>
 
             <p><?php the_content();?></p>
-
         </div>
     </div>
 <?php

@@ -9,7 +9,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- titre-->
-	<title>the First : blog de jeux vidéos</title>
+	<title><?php echo get_bloginfo(); ?></title>
 
     <!-- css -->
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
@@ -27,7 +27,7 @@
     <div class="container">
 
         <!--navbar brand-->
-        <a class="navbar-brand" href="#page-top">The First</a>
+        <a class="navbar-brand" href="#page-top"><?php echo get_bloginfo(); ?></a>
 
         <!--bouton toggle -->
         <div class="navbar-header page-scroll">
